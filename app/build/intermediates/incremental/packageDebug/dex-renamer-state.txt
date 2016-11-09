@@ -1,0 +1,7 @@
+#Wed Nov 09 22:25:22 CET 2016
+base.0=D\:\\BO TRUE\\Android\\Remoto\\Ubicacion\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_8ce63266aed492fa060ad84e0b4921bb7cbdcfba
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=D\:\\BO TRUE\\Android\\Remoto\\Ubicacion\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_12a396c8a1def4567f3e631585976326f0753409\\classes.dex
+base.1=D\:\\BO TRUE\\Android\\Remoto\\Ubicacion\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_12a396c8a1def4567f3e631585976326f0753409
+file.0=D\:\\BO TRUE\\Android\\Remoto\\Ubicacion\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_8ce63266aed492fa060ad84e0b4921bb7cbdcfba\\classes.dex

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.0_ef881e54201c876ba255d37100472e9d8e13d7b3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Camilo\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.0_000cf50d40a2f79cbf8c24af3519c6012dd500ec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0b060160e7daee343f5315b3da91b0ff2d7eed89">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-9.4.0_dce3caaeeb480e362ea1c71b616740c7342f6564\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.4.0_73c564477928ef8e1b6dddb62eecabc478b8857a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.4.0_d9982f73fc781a4cdfb873b86480a363ec7a6a78\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.0_252a7664ac1c887b0c5034597e77adbd479b1698\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_46b858a519ab0bb61863494154f11492865465e8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3749883291e9e99d8a9cf430e19ee952bddd5b42">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_12a396c8a1def4567f3e631585976326f0753409\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.4.0_7687ac6aab80e36a38f0833182eecc46d63b7a9e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.0_1f5da0ff4c76b3fa5c857417139068f5b134b969\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.0_1cca9d22ef2a7d5b07d662752ef5001c49f7142a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.0_96c363d2786ba0c8c5b76bc0837ce428b9d5878b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.0_a2b1b00f2dc847235619d05a46eb009f6bfb17bb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.0_77c31037954e51aef5f2ce01419ebb46f88ef107\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.0_7a1a027cc092f3f0ad379d2c0784bce17f99195c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.0_13bf2390d90381f0e023689b0e7013c2eb5faefa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_5c86ace85e084c689e7e0e77b39e0f062134b2d5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a3b919842abdf84e2a5a8c8120d60c341a4952f1">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_8ce63266aed492fa060ad84e0b4921bb7cbdcfba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_9c9fc3f5f620b6a25dba8dcc25d1e81d4b234813\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_79ac4c21eaf051c35003d873b087e848fba825d7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="D:\BO TRUE\Android\Remoto\Ubicacion\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_c3167dd92ceb52952b4c233ecf0e3a892d1d3b4e\classes.dex" />
+    </item>
+
+</items>
