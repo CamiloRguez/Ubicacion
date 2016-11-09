@@ -60,6 +60,11 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         Log.d("TERMINA", " :onCreate");
     }
 
+    /**
+     * Comprueba los permisos para acceder a la Ubicación del dispositivo
+     * Si los tiene hace la llamada para ejecutar el servicio de ubicación
+     * Si no, hace una petición de permisos al usuario
+     */
     private void comprobarPermisos() {
         Log.d("EMPIEZA", " :comprobarPermiso");
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -72,6 +77,17 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
 
     }
 
+    /**
+     *
+     * @param requestCode
+     * @param permissions
+     * @param grantResults
+     * Maneja el dialogo de permisos con el usuario
+     * Si es la primera vez muestra un mensaje sin checkbox y si se aceptan los permisos se llama al servicio
+     * Si no, no se llama al servicio
+     * Si este dialogo de permisos ya ha sido mostrado antes habilita un check box para indicar que no queremos
+     * que aparezca más el diálogo en caso de no acpetarlo
+     */
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         Log.d("EMPIEZA", " : onRequestPermissionsResult");
@@ -93,7 +109,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     }
 
 
-
+    /**
+     * Conecta la API para cuando se conecte comprobar que la configuración necesaria coincide con la del dispositivo
+     */
     private synchronized void comprobarConfiguracion() {
         Log.d("EMPIEZA", " : comprobarConf");
         apiClient = new GoogleApiClient.Builder(this)
@@ -107,28 +125,14 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         Log.d("TERMINA", " : comprobarConf");
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Log.d("EMPIEZA", " : onActivityResult");
-        switch (requestCode) {
-            case PETICION_CONFIG_UBICACION:
-                switch (resultCode) {
-                    case Activity.RESULT_OK:
-                        //Ejecuto el servicio
-                        canGetLocation = true;
-                        comprobarPermisos();
-                        break;
-                    case Activity.RESULT_CANCELED:
-                        Log.i(LOGTAG, "El usuario no ha realizado los cambios de configuración necesarios");
-                        canGetLocation = false;
-                        comprobarPermisos();
-                        break;
-                }
-                break;
-        }
-        Log.d("TERMINA", " : onActivityResult");
-    }
-
+    /**
+     *
+     * @param bundle
+     * Una vez conectada la API se comprueba que las configuraciones del dispositivo y las necesitadas coinciden
+     * Si la configuración es correcta llama al servicio
+     * Si no, y se puede solucionar llama a un dialogo con el usuario
+     * Si no, no se hace nada
+     */
     @Override
     public void onConnected(@Nullable Bundle bundle) {
         Log.d("EMPIEZA", " : onConnected");
@@ -178,6 +182,37 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         Log.d("TERMINA", " : onConnected");
     }
 
+    /**
+     *
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     * Maneja el diálogo con el usuario sobre la configuración
+     * Si el usuario acepta las modificaciones de configuración se ejecuta el servicio avisando de la disponibilidad
+     * Si no, nse llama al servicio avisando que no está disponible
+     */
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        Log.d("EMPIEZA", " : onActivityResult");
+        switch (requestCode) {
+            case PETICION_CONFIG_UBICACION:
+                switch (resultCode) {
+                    case Activity.RESULT_OK:
+                        //Ejecuto el servicio
+                        canGetLocation = true;
+                        comprobarPermisos();
+                        break;
+                    case Activity.RESULT_CANCELED:
+                        Log.i(LOGTAG, "El usuario no ha realizado los cambios de configuración necesarios");
+                        canGetLocation = false;
+                        comprobarPermisos();
+                        break;
+                }
+                break;
+        }
+        Log.d("TERMINA", " : onActivityResult");
+    }
+
     @Override
     public void onConnectionSuspended(int i) {
         Log.d(LOGTAG, "Conexión de API suspendida");
@@ -188,6 +223,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         Log.d(LOGTAG, "Conexión de API fallida");
     }
 
+    /**
+     * Inicia el servicio Ubicacion
+     */
     private void ejecutarServicioUbicacion() {
         Intent msgIntent = new Intent(MainActivity.this, Ubicacion.class);
         msgIntent.putExtra("stopservice", false);
@@ -253,6 +291,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         unregisterReceiver(rcv);
     }
 
+    /**
+     * Carga las coordenadas de las preferencias almacenadas físicamente
+     */
     private void loadDefaultValues(){
         sharedPref = this.getPreferences(Context.MODE_PRIVATE);
         latitud = Double.valueOf(sharedPref.getString("latitud","37.2582"));
@@ -260,6 +301,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         updateUI();
     }
 
+    /**
+     * Guarda las coordenadas físicamente
+     */
     private void saveDefaultValues(){
         sharedPref = this.getPreferences(Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
@@ -268,6 +312,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         editor.commit();
     }
 
+    /**
+     * Actualiza los SetText de longitud y latiud
+     */
     private void updateUI(){
         lblLatitud = (TextView) findViewById(R.id.lblLatitud);
         lblLongitud = (TextView) findViewById(R.id.lblLongitud);

@@ -50,6 +50,13 @@ public class Ubicacion extends IntentService implements GoogleApiClient.OnConnec
         Log.e("TERMINA: ", "onCreate");
     }
 
+    /**
+     * @param intent
+     * Esta funcion es lanzada cuando llamamos al servicio desde MainActivity
+     * A través del intent recibimos dos parámetros:
+     * canGetLocation -> true si está habilitado obtener la Ubicación en el dispostivo, si no false
+     * stopservice -> true si la llamada se hace para detener el servicio, si no false
+     */
     @Override
     protected void onHandleIntent(Intent intent) {
         Log.d("EMPIEZA: ", "onHandleInternet");
@@ -72,6 +79,10 @@ public class Ubicacion extends IntentService implements GoogleApiClient.OnConnec
         Log.e("TERMINA: ", "onHandleIntent");
     }
 
+    /**
+     * ¡ACTUALMENTE SIN USO!
+     * funcion que inicializa la GoogleApiClient
+     */
     protected synchronized void buildGoogleApiClient() {
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
@@ -87,6 +98,9 @@ public class Ubicacion extends IntentService implements GoogleApiClient.OnConnec
         Log.d("TERMINA: ", "onDestroy");
     }
 
+    /**
+     * Para las actualizaciones de ubicación y desconecta la API
+     */
     public void stopLocationUpdates() {
         Log.e("EMPIEZA: ", "stopLocationUpdates");
         if (!mGoogleApiClient.isConnected()) {
@@ -100,6 +114,10 @@ public class Ubicacion extends IntentService implements GoogleApiClient.OnConnec
         Log.d("TERMINA: ", "stopLocationUpdates");
     }
 
+    /**
+     * Inicia las actualizaciones de ubicación
+     * La comprobación de los permisos se hace en MainActivity
+     */
     private void startLocationUpdates() {
         Log.e("EMPIEZA: ", "startLocationUpdates");
         if (ActivityCompat.checkSelfPermission(getApplicationContext(),
@@ -122,6 +140,13 @@ public class Ubicacion extends IntentService implements GoogleApiClient.OnConnec
         Log.e(TAG, "Error grave al conectar con Google Play Services");
     }
 
+    /**
+     *
+     * @param bundle
+     * Este metodo es llamado cuando la API logra conectarse
+     * Establace la configuración de las peticiones de ubicación
+     * Procede a obetener la ubicación y llamar a las actualizaciones de ubicación
+     */
     @Override
     public void onConnected(@Nullable Bundle bundle) {
         Log.e("EMPIEZA: ", "onConnected");
@@ -145,6 +170,11 @@ public class Ubicacion extends IntentService implements GoogleApiClient.OnConnec
         Log.e(TAG, "Se ha interrumpido la conexión con Google Play Services");
     }
 
+    /**
+     *
+     * @param loc
+     * Envía a través de un Intent la latitud y la longitud a MainActivity
+     */
     private void updateValores(Location loc) {
         Log.e("EMPIEZA: ", "updateValores");
         if (loc != null) {
@@ -160,6 +190,12 @@ public class Ubicacion extends IntentService implements GoogleApiClient.OnConnec
         Log.d("TERMINA: ", "updateValores");
     }
 
+    /**
+     *
+     * @param location
+     * Cada vez que la ubicación cambia se llama a este método
+     * Llamada para actualizar los valores en MainActivity
+     */
     @Override
     public void onLocationChanged(Location location) {
         Log.e("EMPIEZA: ", "onLocationChanged");
@@ -171,6 +207,9 @@ public class Ubicacion extends IntentService implements GoogleApiClient.OnConnec
         Log.d("TERMINA: ", "onLocationChanged");
     }
 
+    /**
+     * Obtiene la última posición conocida
+     */
     private void getLastLocation() {
         Log.e("EMPIEZA: ", "getLastLocation");
         if (ActivityCompat.checkSelfPermission(getApplicationContext(),
